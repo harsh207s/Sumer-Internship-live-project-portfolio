@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Vardhan Singh - MERN Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 bg-yellow-100 transition-colors duration-300">
+
+    
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-blue-100 dark:bg-gray-800 shadow-md">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-gray-800 dark:text-white">Harsh Vardhan Singh</a>
+                <div class="flex items-center space-x-4">
+                    
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#home" class="text-gray-800 dark:text-white hover:text-blue-600">Home</a>
+                        <a href="#about" class="text-gray-800 dark:text-white hover:text-blue-600">About</a>
+                        <a href="#skills" class="text-gray-800 dark:text-white hover:text-blue-600">Skills</a>
+                        <a href="#projects" class="text-gray-800 dark:text-white hover:text-blue-600">Projects</a>
+                        <a href="#certificates" class="text-gray-800 dark:text-white hover:text-blue-600">Certificates</a>
+                        <a href="#contact" class="text-gray-800 dark:text-white hover:text-blue-600">Contact</a>
+                    </div>
+                    <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                        <i class="fas fa-bars text-gray-800 dark:text-white"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="text-gray-800 dark:text-white hover:text-blue-600">Home</a>
+                    <a href="#about" class="text-gray-800 dark:text-white hover:text-blue-600">About</a>
+                    <a href="#skills" class="text-gray-800 dark:text-white hover:text-blue-600">Skills</a>
+                    <a href="#projects" class="text-gray-800 dark:text-white hover:text-blue-600">Projects</a>
+                    <a href="#certificates" class="text-gray-800 dark:text-white hover:text-blue-600">Certificates</a>
+                    <a href="#contact" class="text-gray-800 dark:text-white hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 flex justify-center mb-10 md:mb-0">
+                <div class="profile-pic-container relative w-64 h-64">
+                    <img src="harsh.png" alt="Harsh Vardhan Singh" class="rounded-full border-4 border-blue-500 w-full h-full object-cover shadow-xl animate-float">
+                    <div class="absolute -bottom-2 -right-2 bg-blue-500 text-white rounded-full p-2 shadow-lg">
+                        <i class="fas fa-laptop-code text-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">Harsh Vardhan Singh</h1>
+                <h2 class="text-2xl md:text-3xl text-blue-600 mb-6">MCA Student | MERN Stack Developer</h2>
+                <p class="text-gray-600 dark:text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
+                    Passionate developer with expertise in JavaScript, React, Node.js, and MongoDB. Building innovative web applications with modern technologies.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition duration-300">Contact Me</a>
+                    <a href="resume.html" class="border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 hover:bg-blue-50 dark:hover:bg-gray-800 px-6 py-3 rounded-full font-semibold transition duration-300">View Resume</a>
+                </div>
+                <div class="flex justify-center md:justify-start mt-8 space-x-4">
+                    <a href="https://github.com/harsh207s" target="_blank" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/harsh-vardhan-singh-44b0b3240/" target="_blank" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="mailto:harshaer35@gmail.com" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-purple-300 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Who Am I?</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        I'm a passionate and self-driven MCA student at Invertis University with a strong foundation in web development technologies. I'm eager to apply my skills in JavaScript, React.js, and Node.js in a dynamic environment where I can learn, contribute, and grow.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        My journey in technology started with my Bachelor's in Computer Applications and has continued to grow through various projects, internships, and certifications.
+                    </p>
+                    <div class="flex items-center space-x-4 mt-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
+                            <span class="text-gray-700 dark:text-gray-300">Bareilly, Uttar Pradesh</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-university text-blue-600 mr-2"></i>
+                            <span class="text-gray-700 dark:text-gray-300">Invertis University</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 bg-yellow-300 dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-green-800 dark:text-white mb-4">Education</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-600 pl-4 py-2">
+                            <h4 class="font-bold text-red-800 dark:text-white">Master of Computer Applications (MCA)</h4>
+                            <p class="text-gray-600 dark:text-gray-300">Invertis University, Bareilly | 2024 – 2026</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4 py-2">
+                            <h4 class="font-bold text-red-800 dark:text-white">Bachelor of Computer Applications (BCA)</h4>
+                            <p class="text-gray-600 dark:text-gray-300">Invertis University, Bareilly | 2021 – 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Languages -->
+               
+                
+                <!-- Frontend -->
+                 <div class="skill-card bg-green-300 dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-blue-600 mb-3">
+                        <i class="fas fa-code text-3xl"></i>
+                    </div>
+                 </h4 class="font-bold text-lg text-gray-800 dark:text-white mb-2">
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="skill-badge">
+                                    <i class="fab fa-html5 text-orange-500"></i> HTML5
+                                </span>
+                                <span class="skill-badge">
+                                    <i class="fab fa-css3-alt text-blue-500"></i> CSS3
+                                </span>
+                                <span class="skill-badge">
+                                    <i class="fab fa-js-square text-yellow-500"></i> JavaScript
+                                </span>
+                                <span class="skill-badge">
+                                    <i class="fab fa-react text-blue-400"></i> React
+                                </span>
+                                <span class="skill-badge">
+                                    <i class="fas fa-wind text-teal-400"></i> Tailwind CSS
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!-- Backend Skills -->
+                        <div class="skill-card bg-green-300 dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-blue-600 mb-3">
+                        <i class="fas fa-code text-3xl"></i>
+                    </div>
+                 </h4 class="font-bold text-lg text-gray-800 dark:text-white mb-2">
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="skill-badge">
+                                    <i class="fab fa-node text-orange-500"></i> Node.js
+                                </span>
+                                <span class="skill-badge">
+                                    <i class="fab fa-e text-blue-500"></i> Express
+                                </span>
+                                <span class="skill-badge">
+                                    <i class="fab fa-python text-yellow-500"></i> python
+                            </div>
+                        </div>
+                
+                <!-- Database -->
+                 <div class="skill-card bg-green-300 dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-blue-600 mb-3">
+                        <i class="fas fa-code text-3xl"></i>
+                    </div>
+                 </h4 class="font-bold text-lg text-gray-800 dark:text-white mb-2">
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="skill-badge">
+                                    <i class="fab fa-database text-orange-500"></i> MongoDB
+                            </div>
+                        </div>
+                
+                <!-- Tools -->
+                 <div class="skill-card bg-green-300 dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-blue-600 mb-3">
+                        <i class="fas fa-code text-3xl"></i>
+                    </div>
+                 </h4 class="font-bold text-lg text-gray-800 dark:text-white mb-2">
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="skill-badge">
+                                    <i class="fab fa-github text-orange-500"></i> Github
+                                </span>
+                                <span class="skill-badge">
+                                    <i class="fab fa-v text-blue-500"></i> VsCode
+                                </span>
+                                <span class="skill-badge">
+                                    <i class="fab fa-file-powerpoint"></i>PowerBi
+                                </span>
+                            </div>
+                        </div>
+                
+                <!-- Others -->
+                   <div class="skill-card bg-green-300 dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-blue-600 mb-3">
+                        <i class="fas fa-code text-3xl"></i>
+                    </div>
+                 </h4 class="font-bold text-lg text-gray-800 dark:text-white mb-2">
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="skill-badge">
+                                   <i class="fa-solid fa-recycle"></i> API's
+                                </span>
+                                <span class="skill-badge">
+                                    <i class="fa-solid fa-rectangle-ad"></i>Responsive Design
+                                </span>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-indigo-300 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Netflix Clone -->
+                <div class="project-card bg-red-300 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gray-200 dark:bg-gray-600 flex items-center justify-center">
+                        <i class="fas fa-film text-5xl text-gray-400 dark:text-gray-300"></i>
+                        <img src="Project Images/netflix.jpg" alt="Netflix Clone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Netflix Clone</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">A Netflix UI clone using React.js and TMDB API to fetch movie data dynamically.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">React.js</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">CSS</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">TMDB API</span>
+                        </div>
+                        <a href="https://harsh207s.github.io/netflix-clone" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> View Project
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Typing Game -->
+                <div class="project-card bg-red-300 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gray-200 dark:bg-gray-600 flex items-center justify-center">
+                        <i class="fas fa-keyboard text-5xl text-gray-400 dark:text-gray-300"></i>
+                         <img src="Project Images/typing-test.jpg" alt="Netflix Clone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Typing Game</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">A web application to practice and improve typing speed and accuracy.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">HTML</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">CSS</span>
+                        </div>
+                        <a href="https://harsh207s.github.io/Typing-Game/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> View Project
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Rainy To-Do List -->
+                <div class="project-card bg-red-300 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gray-200 dark:bg-gray-600 flex items-center justify-center">
+                        <i class="fas fa-tasks text-5xl text-gray-400 dark:text-gray-300"></i>
+                         <img src="Project Images/to-do-list.jpeg" alt="Netflix Clone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Rainy To-Do List</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">A weather-themed task management application with a soothing rainy interface.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">HTML</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">CSS</span>
+                        </div>
+                        <a href="https://harsh207s.github.io/Rainy-To-Do-List/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> View Project
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Landing Page -->
+                <div class="project-card bg-red-300 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gray-200 dark:bg-gray-600 flex items-center justify-center">
+                        <i class="fas fa-window-maximize text-5xl text-gray-400 dark:text-gray-300"></i>
+                         <img src="Project Images/landing page.png" alt="Netflix Clone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Landing Page</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">A responsive landing page showcasing modern web design principles.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">HTML</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">CSS</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                        </div>
+                        <a href="https://harsh207s.github.io/Landing-Page/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> View Project
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Chess Game-->
+                     <div class="project-card bg-red-300 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gray-200 dark:bg-gray-600 flex items-center justify-center">
+                        <i class="fas fa-keyboard text-5xl text-gray-400 dark:text-gray-300"></i>
+                         <img src="Project Images/Chess Img.jpeg" alt="Netflix Clone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Chess Game</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Chess Game using HTML, CSS, and JavaScript, your project report should highlight both the technical side and the game concept.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">HTML</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">CSS</span>
+                        </div>
+                        <a href="https://harsh207s.github.io/Chess-Game/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> View Project
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Website -->
+                <div class="project-card bg-red-300 dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gray-200 dark:bg-gray-600 flex items-center justify-center">
+                        <i class="fas fa-user text-5xl text-gray-400 dark:text-gray-300"></i>
+                         <img src="Project Images/portfolio.jpg" alt="Netflix Clone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Portfolio Website</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">A personal portfolio website showcasing projects and skills.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">HTML</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">CSS</span>
+                        </div>
+                        <a href="https://harsh207s.github.io/Portfoliodemo/" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12">Certificates</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cybersecurity -->
+                <div class="certificate-card bg-purple-300 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+                    <div class="h-48 bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-5xl text-blue-600 dark:text-blue-400"></i>
+                         <img src="Certificate image/cybersecurity.jpg" alt="Netflix Clone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Cybersecurity Analyst</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Completed practical tasks in Identity and access management (IAM) fundamentals, strategy assessment, and platform integration.</p>
+                         <a href="Certificates/Cybersecurity tcs.pdf" target="_blank" class"text-blue-600 dark:text-blue-400 hover:underline>View Certificate</a>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Issued: Feb 12, 2025</span>
+                            <span class="text-sm font-semibold text-blue-600 dark:text-blue-400">Forage</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Data Visualization -->
+                <div class="certificate-card bg-purple-300 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+                    <div class="h-48 bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+                        <i class="fas fa-chart-bar text-5xl text-blue-600 dark:text-blue-400"></i>
+                         <img src="Certificate image/data visulazation.png" alt="Netflix Clone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Data Visualization</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Completed practical tasks in framing business scenarios, choosing the right visuals, and communicating insights.</p>
+                         <a href="Certificates/Data Visualisation TCS.pdf" target="_blank" class"text-blue-600 dark:text-blue-400 hover:underline>View Certificate</a>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Issued: Feb 2, 2025</span>
+                            <span class="text-sm font-semibold text-blue-600 dark:text-blue-400">Forage</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Software Engineering -->
+                <div class="certificate-card bg-purple-300 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+                    <div class="h-48 bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+                        <i class="fas fa-code text-5xl text-blue-600 dark:text-blue-400"></i>
+                         <img src="Certificate image/software engi.png" alt="Netflix Clone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Software Engineering</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Created a Backpack React web app, microservice, mobile flight itinerary, and user-friendly platform.</p>
+                         <a href="Certificates/Software Engineering EA Sports.pdf" target="_blank" class"text-blue-600 dark:text-blue-400 hover:underline>View Certificate</a>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Issued: Jan 30, 2025</span>
+                            <span class="text-sm font-semibold text-blue-600 dark:text-blue-400">Forage</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Full Stack Web Development -->
+                <div class="certificate-card bg-purple-300 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+                    <div class="h-48 bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+                        <i class="fas fa-laptop-code text-5xl text-blue-600 dark:text-blue-400"></i>
+                         <img src="Certificate image/full stack.jpeg" alt="Netflix Clone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Full Stack Web Development</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Successfully completed 10 weeks Web Full Stack Developer Virtual Internship during April - June 2025.</p>
+                         <a href="Certificates/Full stack Webdevelopment Certificate.pdf" target="_blank" class"text-blue-600 dark:text-blue-400 hover:underline>View Certificate</a>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Issued: Jun 2025</span>
+                            <span class="text-sm font-semibold text-blue-600 dark:text-blue-400">EduSkills</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Power BI -->
+                <div class="certificate-card bg-purple-300 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+                    <div class="h-48 bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+                        <i class="fas fa-chart-pie text-5xl text-blue-600 dark:text-blue-400"></i>
+                         <img src="Certificate image/power bi.png" alt="Netflix Clone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Power BI Job Simulation</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Completed practical tasks in call center trends, customer retention, and diversity & inclusion analysis.</p>
+                        <a href="Certificates/Power Bi Job.pdf" target="_blank" class"text-blue-600 dark:text-blue-400 hover:underline>View Certificate</a>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Issued: Feb 27, 2025</span>
+                            <span class="text-sm font-semibold text-blue-600 dark:text-blue-400">Forage</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Professional Skills -->
+                <div class="certificate-card bg-purple-300 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow transform hover:-translate-y-1">
+                    <div class="h-48 bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+                        <i class="fas fa-user-tie text-5xl text-blue-600 dark:text-blue-400"></i>
+                         <img src="Certificate image/proffessional.jpeg" alt="Netflix Clone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Professional Skills</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Completed practical tasks in self-discovery and company alignment for professional development.</p>
+                         <a href="Certificates/Professional Skills.pdf" target="_blank" class"text-blue-600 dark:text-blue-400 hover:underline>View Certificate</a>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Issued: Jan 31, 2025</span>
+                            <span class="text-sm font-semibold text-blue-600 dark:text-blue-400">Forage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-red-100 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12">Get In Touch</h2>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mt-1 mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 dark:text-white">Address</h4>
+                                <p class="text-gray-600 dark:text-gray-300">Baraway-Dhari, Pithoragarh, Uttarakhand, India</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mt-1 mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 dark:text-white">Email</h4>
+                                <p class="text-gray-600 dark:text-gray-300">harshaer35@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mt-1 mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 dark:text-white">Phone</h4>
+                                <p class="text-gray-600 dark:text-gray-300">+91-8941835114</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mt-1 mr-4">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 dark:text-white">LinkedIn</h4>
+                                <p class="text-gray-600 dark:text-gray-300">linkedin.com/in/harsh-vardhan-singh-44b0b3240</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 mt-1 mr-4">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 dark:text-white">GitHub</h4>
+                                <p class="text-gray-600 dark:text-gray-300">github.com/harsh207s</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 bg-purple-300 dark:bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Send Me a Message</h3>
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 dark:text-gray-300 mb-1">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 dark:text-gray-300 mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 dark:text-gray-300 mb-1">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 dark:text-gray-300 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300 w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 dark:bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold">Harsh Vardhan Singh</h3>
+                    <p class="text-gray-400">MCA Student | MERN Stack Developer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/harsh207s" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/harsh-vardhan-singh-44b0b3240/" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="mailto:harshaer35@gmail.com" class="text-gray-400 hover:text-white">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400">
+                <p>&copy; 2025 Harsh Vardhan Singh. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

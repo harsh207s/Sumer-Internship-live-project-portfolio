@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Vardhan Singh - Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-gray-800 dark:text-white flex items-center">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    Back to Portfolio
+                </a>
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-full focus:outline-none">
+                        <i class="fas fa-moon dark:hidden text-gray-700"></i>
+                        <i class="fas fa-sun hidden dark:block text-yellow-300"></i>
+                    </button>
+                    <button id="download-resume" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition duration-300 flex items-center">
+                        <i class="fas fa-download mr-2"></i>
+                        Download PDF
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Resume Content -->
+    <main class="container mx-auto px-6 py-12">
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+            <!-- Resume Header -->
+            <div class="bg-blue-600 dark:bg-blue-800 text-white p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-bold mb-2">Harsh Vardhan Singh</h1>
+                        <p class="text-xl md:text-2xl opacity-90">MCA Student | MERN Stack Developer</p>
+                    </div>
+                    <div class="mt-4 md:mt-0 text-sm md:text-base">
+                        <p class="flex items-center mb-1">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            Baraway-Dhari, Pithoragarh, Uttarakhand, India
+                        </p>
+                        <p class="flex items-center mb-1">
+                            <i class="fas fa-envelope mr-2"></i>
+                            harshaer35@gmail.com
+                        </p>
+                        <p class="flex items-center mb-1">
+                            <i class="fas fa-phone mr-2"></i>
+                            +91-8941835114
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fab fa-linkedin mr-2"></i>
+                            linkedin.com/in/harsh-vardhan-singh-44b0b3240
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resume Body -->
+            <div class="p-8">
+                <!-- Objective -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white border-b-2 border-blue-600 dark:border-blue-400 pb-2 mb-4">Objective</h2>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Passionate and self-driven MCA student with a strong foundation in web development technologies. Eager to apply my skills in JavaScript, React.js, and Node.js in a dynamic internship environment where I can learn, contribute, and grow.
+                    </p>
+                </section>
+
+                <!-- Education -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white border-b-2 border-blue-600 dark:border-blue-400 pb-2 mb-4">Education</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Master of Computer Applications (MCA)</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Invertis University, Bareilly | 2024 – 2026</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Bachelor of Computer Applications (BCA)</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Invertis University, Bareilly | 2021 – 2024</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Technical Skills -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white border-b-2 border-blue-600 dark:border-blue-400 pb-2 mb-4">Technical Skills</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-2">Languages</h3>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                                <li>JavaScript</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-2">Frontend</h3>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                                <li>React.js</li>
+                                <li>Bootstrap</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-2">Backend</h3>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-2">Database & Tools</h3>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                                <li>MongoDB</li>
+                                <li>GitHub</li>
+                                <li>VS Code</li>
+                                <li>Power BI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white border-b-2 border-blue-600 dark:border-blue-400 pb-2 mb-4">Projects</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Netflix Clone</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-2">React.js, CSS</p>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                                <li>Developed a Netflix UI clone using React.js and TMDB API to fetch movie data dynamically</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Typing Master</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-2">JavaScript, HTML, CSS</p>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                                <li>A web application to practice and improve typing speed and accuracy</li>
+                                <li><a href="https://harsh207s.github.io/typing-project/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">View Project</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Rainy To-Do List</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-2">JavaScript, HTML, CSS</p>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                                <li>A weather-themed task management application with a soothing rainy interface</li>
+                                <li><a href="https://harsh207s.github.io/Rainy-To-Do-List/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">View Project</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Landing Page</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-2">HTML, CSS, JavaScript</p>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                                <li>A responsive landing page showcasing modern web design principles</li>
+                                <li><a href="https://harsh207s.github.io/Landing-Page/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">View Project</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Portfolio Website</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-2">HTML, CSS</p>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                                <li>Designed and developed a personal portfolio website showcasing projects and skills</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certifications -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white border-b-2 border-blue-600 dark:border-blue-400 pb-2 mb-4">Certifications & Achievements</h2>
+                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+                        <li>Web Full Stack Developer Virtual Internship - EduSkills</li>
+                        <li>Power BI Job Simulation - Forage (Feb 2025)</li>
+                        <li>Software Engineering Job Simulation - Forage (Jan 2025)</li>
+                        <li>Professional Skills Job Simulation - Forage (Jan 2025)</li>
+                        <li>Data Visualization: Empowering Business with Effective Insights - Forage (Feb 2025)</li>
+                        <li>Cybersecurity Analyst Job Simulation - Forage (Feb 2025)</li>
+                        <li>1 month Data Science – Prodigy InfoTech</li>
+                        <li>Cloud Bootcamp - GeeksforGeeks</li>
+                    </ul>
+                </section>
+
+                <!-- Soft Skills -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white border-b-2 border-blue-600 dark:border-blue-400 pb-2 mb-4">Soft Skills</h2>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full">Team collaboration</span>
+                        <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full">Problem-solving</span>
+                        <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full">Communication</span>
+                        <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full">Quick learner</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 dark:bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Harsh Vardhan Singh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Download resume functionality
+        document.getElementById('download-resume').addEventListener('click', function() {
+            // In a real implementation, this would link to an actual PDF file
+            alert('In a real implementation, this would download the PDF resume.');
+            // window.location.href = 'path/to/resume.pdf';
+        });
+    </script>
+</body>
+</html>
